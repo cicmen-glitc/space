@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УЛЬТРА КОСМОС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Новая информационная панель по центру -->
+<div id="info-modal" class="info-modal">
+    <div class="info-modal-content">
+        <span class="info-modal-close">&times;</span>
+        <h2 id="info-modal-title">🌌 Космический объект</h2>
+        <div id="info-modal-body"></div>
+    </div>
+</div>
+
+<div class="controls">
+    <button id="info-btn">📖 Инфо</button>
+    <button id="reset-view">🎥 Сброс</button>
+    <button id="toggle-asteroids">🌠 Астероиды</button>
+    <button id="toggle-time">⏸ Время</button>
+</div>
+
+<div id="hint">🖱️ Управление мышью | Нажми на объект для информации</div>
+
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+    }
+}
+</script>
+
+<script src="script.js" type="module"></script>
+</body>
+</html>
